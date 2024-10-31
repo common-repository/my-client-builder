@@ -1,0 +1,64 @@
+#popup{
+    max-width: 607px;
+    background:#ebebeb;
+}
+#popup-title{
+    line-height: 30px;
+    min-height: 50px;
+    padding-top: 5px;
+    color:#52a2ae;
+}
+#popup-form{
+    background: white none repeat scroll 0 0;
+    border: 2px solid #959595;
+    border-radius: 5px;
+    padding: 5px 2%;
+}
+#popup-form input{
+    height: 34px;
+    line-height: 34px;
+}
+#popup-form input.input-submit{
+    background: #e86c35 none repeat scroll 0 0;
+    border: 3px solid #959595;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    filter: none;
+    height: 34px;
+    line-height: 30px;
+    width: 30%;
+}
+#withtitle #popup-top {
+    margin: 0 2%;
+}
+#popup-bottom h2{
+    color: #52a2ae;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height: 60px;
+}
+.bx-wrapper .bx-viewport{
+    border:3px solid #b3b3b3;
+    border-radius: 5px;
+}
+#popup-bottom a img{
+    border: 0 none;
+    height: 250px;
+    width: 280px;
+}
+#popup-note{
+    padding-top:20px;
+    font-family: arial
+}
+.bx-wrapper .bx-prev {
+    background: url(img/arrow_left.png) no-repeat 0 0;
+}
+.bx-wrapper .bx-next {
+    background: url(img/arrow_right.png) no-repeat 0 0;
+}
+.bx-wrapper .bx-controls-direction a{
+    height:61px;
+    width:61px;
+}

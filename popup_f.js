@@ -1,0 +1,1 @@
+function gvatecom_hover(){jQuery("#mcb-popup").colorbox({iframe:!0,innerWidth:600,innerHeight:500,fixed:!0}).trigger("click")}jQuery(document).ready(function(){popupout(!1,{callback:function(){gvatecom_hover()}})});

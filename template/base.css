@@ -1,0 +1,388 @@
+body{
+    background:white;
+    padding:0px;
+    margin:0px;
+}
+#popup{
+    height:500px;
+    max-width:600px;
+    width:100%;
+    margin:0px auto;
+    padding:0px 0px 0px 0px;
+}
+#popup-top{
+    float: left;
+    margin: 15px 2%;
+    max-width: 587px;
+    width: 96%;
+}
+#popup-bottom {
+    float: left;
+    margin:10px 2% 10px 2%;
+    width: 96%;
+}
+#popup-bottom h2{
+    margin-top:0px; 
+    color: white;
+    font-family: arial;
+    font-size: 18pt;
+    text-align: center;
+}
+#popup-title{
+    float: left;
+    padding: 10px 2% 0px 2%;
+    width: 96%;
+    color:white;
+    font-family:arial;
+    font-size:14pt;
+    margin:0px;
+}
+#popup-form{
+    width:96%;
+    float:left;
+    padding:10px 2% 10px 2%;
+}
+#popup-form input{
+    background: none repeat scroll 0 0 white;
+    border: 0 none; 
+    color: #e1d8d8;
+    float: left;
+    font-family: arial;
+    font-size: 13pt;
+    font-weight: bold;
+    height: 44px;
+    line-height: 44px;
+    margin: 0;
+    padding: 0;
+    text-indent: 10px;
+    width: 65%;
+}
+#popup-form input.input-submit{
+    background: white;
+    font-family:"Myriad Pro";
+    border: 0 none;
+    color: black;
+    font-size: 13pt;
+    font-weight: bold;
+    height: 44px;
+    line-height: 31px;
+    margin: 0;
+    text-indent: 0;
+    width: 33%;
+    float:right;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+}
+#popup-right h2{
+    border-bottom: 2px solid white;
+    color: #00a3e8;
+    font-family: arial;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 31px;
+    margin: 0 0 5px;
+    padding: 10px 0;
+}
+.page-location,.active-visitors{
+    color: black;
+    float: left;
+    font-family: arial;
+    font-size: 9pt;
+    font-weight: bold;
+    width: 65%;
+}
+.active-visitors{
+    width: 35%;
+}
+#popup-right .title{
+    font-size:16px;
+    color:red;
+}
+.page-location a,.active-visitors a{
+    color:black;
+}
+.page-location span{
+    font-size:7pt;
+}
+.page-location span strong{
+    color:black;
+}
+#popup-right ul{
+    border-top: 11px solid white;
+    float: left;
+    line-height: 20px;
+    list-style: outside none none;
+    margin: 5px 0;
+    padding: 0;
+    width: 100%;
+    height: 180px;
+}
+#popup-right ul li{
+    padding:0px;
+    margin:0px;
+    width:100%;
+    float:left;
+    list-style:none;   
+}
+#popup-right ul li a{
+    color:black;
+    text-decoration:none;
+}
+#popup-right ul li .active-visitors{
+    border-left:11px solid white;
+    text-align:center;
+    width:30%;
+}
+.active-visitors{
+    text-align:center; 
+}
+#copyright{
+    width:100%;
+    float:left;
+    margin-top:5px;
+}
+#logo{
+    width:20px;
+    float:left;
+    margig-top:20px;
+    margin-left: 70px;
+    margin-right:5px;
+}
+#logo img{
+    width:20px;
+}
+#copyright-text{
+    float:left;
+}
+#popup-bottom a img {
+    border: 5px solid white;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width:270px;
+    height:290px;
+}
+.popup-page-title,.popup-page-image,.popup-page-count{
+    width:100%;
+    float:left;
+}
+.popup-page-title{
+
+    padding: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 99999;
+    background-color: rgba(173, 173, 173, 0.84);
+    color: white;
+    float: left;
+    font-family: arial;
+    font-size: 13pt;
+
+}
+.popup-page-count{
+    text-align:center;
+    font-family:arial;
+    padding:10px 0px 10px 0px;
+    font-size:11pt;
+    color:#00A3E8;
+    font-weight:bold;
+}
+#corner-left{
+    display:none;
+}
+#corner-right{
+    display:none;
+}
+.popup-success{
+    background: white none repeat scroll 0 0;
+    color: green;
+    margin: -22px 0 0;
+    padding: 5px 5%;
+    width: 90%;
+}
+.popup-error{
+    background: white none repeat scroll 0 0;
+    color:red;
+    margin: -22px 0 0;
+    padding: 5px 5%;
+    width: 90%;
+}
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+/** RESET AND LAYOUT
+===================================*/
+.bx-wrapper {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    *zoom: 1;
+}
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+/** THEME
+===================================*/
+.bx-wrapper .bx-viewport {
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border:  5px solid #fff;
+    left: -5px;
+    background: #fff;   
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+        -ms-transform: translatez(0);
+        -o-transform: translatez(0);
+        transform: translatez(0);
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+/* LOADER */
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    /* background: url(images/bx_loader.gif) center center no-repeat #fff; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+/* PAGER */
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #666;
+    padding-top: 20px;
+}
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #000;
+}
+/* DIRECTION CONTROLS (NEXT / PREV) */
+.bx-wrapper .bx-prev {
+    left: 10px;
+    margin-left: -40%;
+}
+.bx-wrapper .bx-next {
+    right: 10px;
+    margin-right: -40%;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    width: 44px;
+    height: 44px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+/* AUTO CONTROLS (START / STOP) */
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -11px no-repeat;
+    margin: 0 3px;
+}
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -44px no-repeat;
+    margin: 0 3px;
+}
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+/* IMAGE CAPTIONS */
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #666\9;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+}
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
+#withtitle #popup-top{
+    margin:10px 2% 0px 2%;
+}
+#withtitle #popup-bottom{
+    margin:10px 2% 2px;
+}
+@media (max-width: 500px) {
+    .bx-wrapper .bx-prev {
+        left: 10px;
+        margin-left: 0px;
+    }
+    .bx-wrapper .bx-next {
+        right: 10px;
+        margin-right: 0px;
+    }
+    #popup-form input.input-submit{
+        font-size:9pt;
+    }
+    #popup-bottom h2{
+        font-size:13pt;
+    }
+}
